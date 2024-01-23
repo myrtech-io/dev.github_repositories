@@ -1,0 +1,11 @@
+teams:
+  - name: developers
+    description: "Development team"
+    members:
+      - username: arpandixit1706
+        role: member
+  - name: platform
+    description: "Platform Team"
+    members:
+      - username: itisdeep
+        role: maintainer

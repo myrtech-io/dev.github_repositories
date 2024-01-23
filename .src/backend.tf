@@ -1,9 +1,9 @@
-terraform {
-  cloud {
-    organization = "myrtech-io"
+# terraform {
+#   cloud {
+#     organization = "myrtech-io"
 
-    workspaces {
-      name = "myrtech-io-github"
-    }
-  }
-}
+#     workspaces {
+#       name = "myrtech-io-github"
+#     }
+#   }
+# }
