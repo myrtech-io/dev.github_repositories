@@ -9,3 +9,8 @@ teams:
     members:
       - username: itisdeep
         role: maintainer
+  - name: resumate
+    description: "resume builder team"
+    members:
+      - username: arpandixit1706
+        role: member

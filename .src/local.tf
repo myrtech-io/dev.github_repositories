@@ -1,11 +1,13 @@
 locals {
   repositories = yamldecode(file("../repositories.yaml")).repositories
-  teams = yamldecode(file("teams.yaml"))
-
-  team = flatten ([
-    for teams,details in local.teams : [
-      for k,v in details : {
-        team_name = teams.name
+  parsed_teams = yamldecode(file("teams.yaml"))["teams"]
+  team_info = flatten([
+    for team in local.parsed_teams : [
+      for member, values in team.members : {
+        name = team.name
+        description = team.description
+        member_username = values.username
+        member_role = values.role
       }
     ]
   ])
