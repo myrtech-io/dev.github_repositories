@@ -1,3 +1,6 @@
 repositories:
   - name: github_repositories
     description: Github Repositories
+  - name: resumate
+    description: Resume builder repository
+    
