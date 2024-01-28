@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "github" {
-  # token = "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"
-  token = "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"
+  token = var.token
   owner = "myrtech-io"
 }

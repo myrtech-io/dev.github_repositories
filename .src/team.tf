@@ -8,7 +8,7 @@ resource "github_team" "teams" {
 
 resource "github_team_membership" "team_memberships" {
   for_each = { for team in local.team_info : team.name => team }
-  team_id      = github_team.teams[each.value.name].id
+  team_id  = github_team.teams[each.value.name].id
   username = each.value.member_username
   role     = each.value.member_role
 }

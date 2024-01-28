@@ -1,6 +1,9 @@
 repositories:
   - name: github_repositories
     description: Github Repositories
+    branch_prefixes: ["master", "feature", "release"]
+
   - name: resumate
     description: Resume builder repository
+    branch_prefixes: ["master", "feature", "release"]
     
