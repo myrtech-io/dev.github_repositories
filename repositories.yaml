@@ -6,4 +6,8 @@ repositories:
   - name: resumate
     description: Resume builder repository
     branch_prefixes: ["master", "feature", "release"]
+
+  - name: kubernetes_installation
+    description: Multinode kubernetes installation using ansible
+    branch_prefixes: ["master", "feature", "release"]
     
